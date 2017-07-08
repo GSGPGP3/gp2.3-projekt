@@ -20,39 +20,38 @@
 ##   geschickt                      ##
 ##                                  ##
 ######################################
-	session_start();
-	include("connect.php");
-	if($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
-	{
-	  header("Location: loginAdmin.php");
-	}
-	//von Formular in neu.php gesendet
-	// Datensätze einer evtl. vorhandenen, zuvor durchgeführten Umfrage löschen
-	$sql = " TRUNCATE TABLE `Kommentare`";
-	@mysql_query($sql);
-	$sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
-	@mysql_query($sql);
-	$sql = " TRUNCATE TABLE `Sessions`";
-	@mysql_query($sql);
+session_start();
+include("connect.php");
+if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+{
+    header("Location: loginAdmin.php");
+}
+//von Formular in neu.php gesendet
+// Datensätze einer evtl. vorhandenen, zuvor durchgeführten Umfrage löschen
+$sql = " TRUNCATE TABLE `Kommentare`";
+@$mysqli->query($sql);
+$sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
+@$mysqli->query($sql);
+$sql = " TRUNCATE TABLE `Sessions`";
+@$mysqli->query($sql);
 
-	// alle Fragen der Umfrage in DB als ausgewählt kennzeichnen
-	$sql = "SELECT * FROM Fragen";
-	$result = mysql_query($sql);
-	for ($n=1; $n<=mysql_num_rows($result); $n++)
-	{
-	  $row = mysql_fetch_assoc($result);
-	  $id = $row["ID"];
-	  if($_POST[$id] == 1){
-	    $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
-	    mysql_query($sql2);
-	  }
-	}
+// alle Fragen der Umfrage in DB als ausgewählt kennzeichnen
+$sql = "SELECT * FROM Fragen";
+$result = $mysqli->query($sql);
+for ($n = 1; $n <= $result->num_rows; $n++) {
+    $row = $result->fetch_assoc();
+    $id = $row["ID"];
+    if ($_POST[$id] == 1) {
+        $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
+        $mysqli->query($sql2);
+    }
+}
 
-	// Ende Verarbeitung
-	include("metadaten.php");
-  // Formular zum Aufruf von neu_3.php
-	// Beginn mehrzeilige HTML-Ausgabe
-	echo '
+// Ende Verarbeitung
+include("metadaten.php");
+// Formular zum Aufruf von neu_3.php
+// Beginn mehrzeilige HTML-Ausgabe
+echo '
 	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	    <tr>
 	      <td width="100%" height="400" align="center" valign="middle">

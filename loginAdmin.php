@@ -13,26 +13,23 @@
 ## Admin-Login                      ##
 ##                                  ##
 ######################################
-	session_start();
-	include("connect.php");
-	$passwort_ok = true;
-	if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
-	{
-	  if($_POST["Passwort"] == $admin_pw)
-	  {  // PW ok
-	    $_SESSION["login"] = 1;
-	    // Wechsel zu Admin-Menü
-	    header("Location: menuAdmin.php");
-	  }
-	  else
-	  { // falsches PW
-	    $_SESSION["login"] = 0;
-	    $passwort_ok = false;
-	  }
-	}
-	include("metadaten.php");
-	// Beginn mehrzeilige HTML-Ausgabe
-  echo '
+session_start();
+include("connect.php");
+$passwort_ok = true;
+if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
+{
+    if ($_POST["Passwort"] == $admin_pw) {  // PW ok
+        $_SESSION["login"] = 1;
+        // Wechsel zu Admin-Menü
+        header("Location: menuAdmin.php");
+    } else { // falsches PW
+        $_SESSION["login"] = 0;
+        $passwort_ok = false;
+    }
+}
+include("metadaten.php");
+// Beginn mehrzeilige HTML-Ausgabe
+echo '
 	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	    <tr>
 	      <td width="100%" height="400" align="center" valign="middle">
@@ -51,12 +48,11 @@
 	            </tr>
 	            <tr>
 	              <td colspan="2" bgcolor="#FF0000">'; // echo-Ende
-  if($passwort_ok == false)
-  {
-							    echo 'Das angegebene Passowort ist falsch';
-  }
-	// Beginn mehrzeilige HTML-Ausgabe
-  echo '
+if ($passwort_ok == false) {
+    echo 'Das angegebene Passowort ist falsch';
+}
+// Beginn mehrzeilige HTML-Ausgabe
+echo '
 	              </td>
 	            </tr>
 	            <tr>

@@ -17,16 +17,16 @@
 ## - Umfrage löschen                ##
 ## - Logout                         ##
 ######################################
-	session_start();
-	include("connect.php");
-	if($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
-	{
-	  header("Location: loginAdmin.php");
-	}
-	include("metadaten.php");
-	// Administrator - Hauptmenü
-  // Beginn mehrzeilige HTML-Ausgabe
-	echo '
+session_start();
+include("connect.php");
+if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+{
+    header("Location: loginAdmin.php");
+}
+include("metadaten.php");
+// Administrator - Hauptmenü
+// Beginn mehrzeilige HTML-Ausgabe
+echo '
 	  <table width="726" border="0" cellspacing="0" cellpadding="0">
 	    <tr>
 	      <td width="166"><div align="center"><a href="neu.php">Neue Umfrage einrichten</a></div></td>

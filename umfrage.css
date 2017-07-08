@@ -1,21 +1,24 @@
 body {
-	background-color: #95EAEA;
-  font-size: x-large;
+    background-color: #95EAEA;
+    font-size: x-large;
 }
+
 #butSenden {
-  background: #0080C0;
-	color: #FFFF00;
-	font-weight:bold;
-  font-size: x-large;
+    background: #0080C0;
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: x-large;
 }
+
 input, #Ticket {
-	background: white;
-	font-size: x-large;
-	color: blue;
+    background: white;
+    font-size: x-large;
+    color: blue;
 }
+
 .Tabellenueberschrift {
-	background: #0000cd;
-	color: aqua;
+    background: #0000cd;
+    color: aqua;
 }
 
 
