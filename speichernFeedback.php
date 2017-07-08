@@ -20,10 +20,12 @@ $session_id = session_id();
 $sql = "SELECT * FROM Sessions WHERE Session = '$session_id';";
 $result = $mysqli->query($sql);
 $login_var = false;
-for ($i = 0; $i < $result->num_rows; $i++) {
-    $row = $result->fetch_assoc();
-    $login_var = true;
-    $ausgefuellt = $row["Ausgefuellt"]; // ist der Fragebogen für diese session schon ausgefüllt?
+if ($result) {
+    for ($i = 0; $i < $result->num_rows; $i++) {
+        $row = $result->fetch_assoc();
+        $login_var = true;
+        $ausgefuellt = $row["Ausgefuellt"]; // ist der Fragebogen für diese session schon ausgefüllt?
+    }
 }
 // falls Session noch nicht gespeichert --> Login
 if ($login_var == false) {
@@ -31,7 +33,7 @@ if ($login_var == false) {
 }
 
 
-if ($ausgefuellt == false) { // falls Fragebogen für diese Session noch nicht ausgefüllt
+if (isset($ausgefuellt) && !$ausgefuellt) { // falls Fragebogen für diese Session noch nicht ausgefüllt
     $sql = "SELECT * FROM Fragen WHERE Ausgewaehlt = '1';";
     //echo "#" . $sql . "<br>";  // Kontrollausgabe
     $result = $mysqli->query($sql);

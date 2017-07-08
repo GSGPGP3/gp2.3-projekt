@@ -22,7 +22,7 @@
 ######################################
 session_start();
 include("connect.php");
-if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
 {
     header("Location: loginAdmin.php");
 }
@@ -38,12 +38,14 @@ $sql = " TRUNCATE TABLE `Sessions`";
 // alle Fragen der Umfrage in DB als ausgewählt kennzeichnen
 $sql = "SELECT * FROM Fragen";
 $result = $mysqli->query($sql);
-for ($n = 1; $n <= $result->num_rows; $n++) {
-    $row = $result->fetch_assoc();
-    $id = $row["ID"];
-    if ($_POST[$id] == 1) {
-        $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
-        $mysqli->query($sql2);
+if ($result) {
+    for ($n = 1; $n <= $result->num_rows; $n++) {
+        $row = $result->fetch_assoc();
+        $id = $row["ID"];
+        if ($_POST[$id] == 1) {
+            $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
+            $mysqli->query($sql2);
+        }
     }
 }
 

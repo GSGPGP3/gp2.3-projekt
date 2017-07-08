@@ -27,11 +27,13 @@ $result = $mysqli->query($sql);
 //while($row = mysql_fetch_assoc($result))
 $login_var = false; // boolsche Variable, gibt an, ob session-id in DB bereits existiert
 $ausgefuellt = 0; // Dummy-Zuweisung, damit diese Variable existiert, auch wenn es die Session-ID nicht in DB gibt
-for ($i = 1; $i <= $result->num_rows; $i++)   // Schleife über alle session-id-Einträge in DB, dürfte eigentlich höchstens einer sein
-{
-    $row = $result->fetch_assoc();
-    $login_var = true;
-    $ausgefuellt = $row["Ausgefuellt"];  // Ticket bereits verbraucht?
+if ($result) {
+    for ($i = 1; $i <= $result->num_rows; $i++)   // Schleife über alle session-id-Einträge in DB, dürfte eigentlich höchstens einer sein
+    {
+        $row = $result->fetch_assoc();
+        $login_var = true;
+        $ausgefuellt = $row["Ausgefuellt"];  // Ticket bereits verbraucht?
+    }
 }
 // wenn die session-id noch nicht in der DB ist --> Login, sonst Fragebogen wird fortgesetzt
 if ($login_var == false) {
@@ -74,7 +76,7 @@ if ($ausgefuellt) // == true
         $sql1 = "SELECT * FROM Fragen WHERE Ausgewaehlt = '1' AND Block = $i;";
         //echo "#" . $sql1 . "<br>";  // Kontrollausgabe
         $result1 = $mysqli->query($sql1);
-        if ($result1->num_rows >= 1) // es gibt Fragen in diesem Block
+        if ($result1 && $result1->num_rows >= 1) // es gibt Fragen in diesem Block
         {
             // Beginn mehrzeilige HTML-Ausgabe
             echo '

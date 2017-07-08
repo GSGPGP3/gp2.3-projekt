@@ -17,7 +17,7 @@
 ######################################
 session_start();
 include("connect.php");
-if ($_SESSION["login"] != 1) {
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1) {
     header("Location: loginAdmin.php");
 }
 
@@ -29,7 +29,7 @@ for ($id = 1; $id <= count($ueberschriften); $id++) {
     // alle beantworteten Fragen aus der DB lesen
     $sql = "SELECT * FROM `Fragen` WHERE `Ausgewaehlt` = '1' AND Block = '$id' ORDER BY  ID";
     $result = $mysqli->query($sql);
-    if ($result->num_rows >= 1) // falls es Fragen gibt
+    if ($result && $result->num_rows >= 1) // falls es Fragen gibt
     {
         // Beginn mehrzeilige HTML-Ausgabe
         echo '
@@ -116,16 +116,18 @@ echo '
 $sql = "SELECT * FROM Kommentare";
 $result = $mysqli->query($sql);
 // wiederhole für alle Kommentare
-for ($i = 1; $i <= $result->num_rows; $i++) {
-    $row = $result->fetch_assoc();
-    // Beginn mehrzeilige HTML-Ausgabe
-    echo '
+if ($result) {
+    for ($i = 1; $i <= $result->num_rows; $i++) {
+        $row = $result->fetch_assoc();
+        // Beginn mehrzeilige HTML-Ausgabe
+        echo '
 	    <tr>
 	    	<td colspan="5">' . $row["Kommentar"] . '</td>
 	    </tr>
 	    <tr>
 	    	<td colspan="5"><hr width="100%" /></td>
 	    </tr>'; // echo-Ende
+    }
 }
 echo '
 	  </table>

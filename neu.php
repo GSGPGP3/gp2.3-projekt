@@ -18,7 +18,7 @@
 ######################################
 session_start();
 include("connect.php");
-if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
 {
     header("Location: loginAdmin.php");
 }
@@ -42,10 +42,12 @@ for ($i = 1; $i <= count($ueberschriften); $i++) {
     $result = $mysqli->query($sql);
     echo '				<h4>' . $ueberschriften[$i] . '</h4>';
     // wiederhole für alle Datensätze/Zeilen
-    for ($n = 1; $n <= $result->num_rows; $n++) {
-        $row = $result->fetch_assoc();
-        echo '			<input name="' . $row["ID"] . '" type="checkbox" value="1" checked> &nbsp;';
-        echo $row["Frage"] . '<br>';
+    if ($result) {
+        for ($n = 1; $n <= $result->num_rows; $n++) {
+            $row = $result->fetch_assoc();
+            echo '			<input name="' . $row["ID"] . '" type="checkbox" value="1" checked> &nbsp;';
+            echo $row["Frage"] . '<br>';
+        }
     }
 }
 // Beginn mehrzeilige HTML-Ausgabe

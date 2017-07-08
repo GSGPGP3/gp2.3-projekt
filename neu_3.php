@@ -38,7 +38,7 @@ function randomString($len)
     return $str;
 }
 
-if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
 {
     header("Location: login.php");
 }
@@ -56,19 +56,21 @@ echo '
 	              <table width="100%" border="1" cellspacing="0" cellpadding="0">
 	              	<tr>';  // echo-Ende
 srand(make_seed());
-for ($i = 1; $i <= $_POST["Anzahl"]; $i++) {
-    $ticket = randomString(7); // erzeugt 7-stellige Zufallsstring --> Ticket-ID
-    // neue Ticket-ID --> neuer Datensatz in DB
-    $sql = "INSERT INTO Sessions (`Session`, `TicketID`,`Ausgefuellt`) VALUES ('', '" . $ticket . "', '0');";
-    $mysqli->query($sql);
-    echo '
-    								<td height="50px"><div align="center">' . $ticket . '</div></td>';
-    // Zeilenumbruch alle 4 Ticket-IDs
-    if ($i % 4 == 0) {
-        // Beginn mehrzeilige HTML-Ausgabe
+if (isset($_POST["Anzahl"])) {
+    for ($i = 1; $i <= $_POST["Anzahl"]; $i++) {
+        $ticket = randomString(7); // erzeugt 7-stellige Zufallsstring --> Ticket-ID
+        // neue Ticket-ID --> neuer Datensatz in DB
+        $sql = "INSERT INTO Sessions (`Session`, `TicketID`,`Ausgefuellt`) VALUES ('', '" . $ticket . "', '0');";
+        $mysqli->query($sql);
         echo '
+    								<td height="50px"><div align="center">' . $ticket . '</div></td>';
+        // Zeilenumbruch alle 4 Ticket-IDs
+        if ($i % 4 == 0) {
+            // Beginn mehrzeilige HTML-Ausgabe
+            echo '
       						</tr>
                   <tr>'; // echo-Ende
+        }
     }
 }
 // Beginn mehrzeilige HTML-Ausgabe

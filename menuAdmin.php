@@ -19,7 +19,7 @@
 ######################################
 session_start();
 include("connect.php");
-if ($_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
 {
     header("Location: loginAdmin.php");
 }
