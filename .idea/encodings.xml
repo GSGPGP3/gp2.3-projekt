@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/MySQL.txt" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/MySQLneu.txt" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/auswertenUmfrage.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/connect.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/index.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/login.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/loginAdmin.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/logoutAdmin.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/menuAdmin.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/metadaten.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/neu.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/neu_2.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/neu_3.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/speichernFeedback.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/MySQL.txt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/MySQLneu.txt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/connect.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/index.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/login.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/loginAdmin.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/logoutAdmin.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/menuAdmin.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/metadaten.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/neu.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/neu_2.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/neu_3.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/htdocs/speichernFeedback.php" charset="ISO-8859-1" />
   </component>
 </project>

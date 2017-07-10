@@ -18,6 +18,7 @@ include("connect.php");
 $passwort_ok = true;
 if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
 {
+
     if ($_POST["Passwort"] == $admin_pw) {  // PW ok
         $_SESSION["login"] = 1;
         // Wechsel zu Admin-Menü
@@ -33,7 +34,7 @@ echo '
 	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	    <tr>
 	      <td width="100%" height="400" align="center" valign="middle">
-	      	<form id="AdminLoginFormular" method="post" action="loginAdmin.php?do=1">
+	      	<form id="AdminLoginFormular" method="get" action="loginAdmin.php?do=1">
 	        	<table width="40%" border="0" cellspacing="0" cellpadding="0">
 	            <tr>
 	              <td colspan="2" bgcolor="#333333" class="Tabellenueberschrift">&gt;&nbsp;&nbsp;Login</td>
@@ -50,6 +51,8 @@ echo '
 	              <td colspan="2" bgcolor="#FF0000">'; // echo-Ende
 if ($passwort_ok == false) {
     echo 'Das angegebene Passowort ist falsch';
+    if(isset($_POST["Passwort"]) ) echo "isset";
+    echo $admin_pw;
 }
 // Beginn mehrzeilige HTML-Ausgabe
 echo '
