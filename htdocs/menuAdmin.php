@@ -18,14 +18,10 @@
 ## - Logout                         ##
 ######################################
 session_start();
-include("connect.php");
-if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
-{
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1) {
     header("Location: loginAdmin.php");
 }
 include("metadaten.php");
-// Administrator - Hauptmenü
-// Beginn mehrzeilige HTML-Ausgabe
 echo '
 	  <table width="726" border="0" cellspacing="0" cellpadding="0">
 	    <tr>

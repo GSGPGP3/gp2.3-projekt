@@ -21,30 +21,28 @@
 ##                                  ##
 ######################################
 session_start();
-include("connect.php");
-if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
-{
+include("Database.php");
+$db = new Database();
+if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1) {
     header("Location: loginAdmin.php");
 }
-//von Formular in neu.php gesendet
-// Datensätze einer evtl. vorhandenen, zuvor durchgeführten Umfrage löschen
 $sql = " TRUNCATE TABLE `Kommentare`";
-@$mysqli->query($sql);
+@$db->query($sql);
 $sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
-@$mysqli->query($sql);
+@$db->query($sql);
 $sql = " TRUNCATE TABLE `Sessions`";
-@$mysqli->query($sql);
+@$db->query($sql);
 
 // alle Fragen der Umfrage in DB als ausgewählt kennzeichnen
 $sql = "SELECT * FROM Fragen";
-$result = $mysqli->query($sql);
+$result = $db->query($sql);
 if ($result) {
     for ($n = 1; $n <= $result->num_rows; $n++) {
         $row = $result->fetch_assoc();
         $id = $row["ID"];
         if ($_POST[$id] == 1) {
             $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
-            $mysqli->query($sql2);
+            $db->query($sql2);
         }
     }
 }

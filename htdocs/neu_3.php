@@ -17,7 +17,8 @@
 ## - Link zum Admin-Menü            ##
 ######################################
 session_start();
-include("connect.php");
+include("Database.php");
+$db = new Database();
 
 // 2 Funktionen zur Erzeugung von Zufallszahlen abhängig von der Systemzeit
 function make_seed()
@@ -61,7 +62,7 @@ if (isset($_POST["Anzahl"])) {
         $ticket = randomString(7); // erzeugt 7-stellige Zufallsstring --> Ticket-ID
         // neue Ticket-ID --> neuer Datensatz in DB
         $sql = "INSERT INTO Sessions (`Session`, `TicketID`,`Ausgefuellt`) VALUES ('', '" . $ticket . "', '0');";
-        $mysqli->query($sql);
+        $db->query($sql);
         echo '
     								<td height="50px"><div align="center">' . $ticket . '</div></td>';
         // Zeilenumbruch alle 4 Ticket-IDs

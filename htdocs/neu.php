@@ -17,7 +17,8 @@
 ##                                  ##
 ######################################
 session_start();
-include("connect.php");
+include("Database.php.php");
+$db = new Database();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich an dieser Stelle nie eintreten
 {
     header("Location: loginAdmin.php");
@@ -39,7 +40,7 @@ echo '
 // wiederhole für alle Überschriften/Kategorien
 for ($i = 1; $i <= count($ueberschriften); $i++) {
     $sql = "SELECT * FROM Fragen WHERE Block = '" . $i . "' ORDER BY ID;";
-    $result = $mysqli->query($sql);
+    $result = $db->query($sql);
     echo '				<h4>' . $ueberschriften[$i] . '</h4>';
     // wiederhole für alle Datensätze/Zeilen
     if ($result) {

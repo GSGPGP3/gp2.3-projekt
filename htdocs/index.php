@@ -14,15 +14,14 @@
 ##                                  ##
 ######################################
 session_start();   // neue Session erstellen oder bestehende fortführen, deren ID über eine GET-Variable oder ein Cookie übermittelt wurde. Im Erfolgsfall gibt die Funktion true zurück.
-include("connect.php");   // Dateiinhalt (html und/oder php) wird hier ausgewertet, als würde er hier stehen
-
-// aktuelle session-id in DB speichern --> nur eine Umfrage innerhalb einer Browser-Session ist möglich
+include("Database.php");
+$db = new Database();
 // neue Umfrage am gleichen PC --> Browser schließen und neu starten
 $session_id = session_id(); // Aktuelle Session-ID des Browsers holen
 // hole alle session-Einträge dieser session-id aus der DB - dürfte eigentlich nur ein oder kein Datensatz sein
 // nicht zu verwechseln mit der SessionID in Login.php !!!
 $sql = "SELECT * FROM Sessions WHERE Session = '$session_id';";
-$result = $mysqli->query($sql);
+$result = $db->query($sql);
 // wiederhole für Datensätze dieser session-id
 //while($row = mysql_fetch_assoc($result))
 $login_var = false; // boolsche Variable, gibt an, ob session-id in DB bereits existiert
@@ -75,7 +74,7 @@ if ($ausgefuellt) // == true
         // Alle Fragen eines Blocks
         $sql1 = "SELECT * FROM Fragen WHERE Ausgewaehlt = '1' AND Block = $i;";
         //echo "#" . $sql1 . "<br>";  // Kontrollausgabe
-        $result1 = $mysqli->query($sql1);
+        $result1 = $db->query($sql1);
         if ($result1 && $result1->num_rows >= 1) // es gibt Fragen in diesem Block
         {
             // Beginn mehrzeilige HTML-Ausgabe

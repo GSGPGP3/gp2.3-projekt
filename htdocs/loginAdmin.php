@@ -14,16 +14,15 @@
 ##                                  ##
 ######################################
 session_start();
-include("connect.php");
+include("Database.php");
+$db = new Database();
 $passwort_ok = true;
-if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
-{
+if (isset($_GET['do'])) {
 
-    if ($_POST["Passwort"] == $admin_pw) {  // PW ok
+    if ($_POST["Passwort"] == $db::$admin_pw) {  // TODO besseren platz für admin_pw
         $_SESSION["login"] = 1;
-        // Wechsel zu Admin-Menü
         header("Location: menuAdmin.php");
-    } else { // falsches PW
+    } else {
         $_SESSION["login"] = 0;
         $passwort_ok = false;
     }
@@ -51,7 +50,7 @@ echo '
 	              <td colspan="2" bgcolor="#FF0000">'; // echo-Ende
 if ($passwort_ok == false) {
     echo 'Das angegebene Passowort ist falsch';
-    if(isset($_POST["Passwort"]) ) echo "isset";
+    if (isset($_POST["Passwort"])) echo "isset";
     echo $admin_pw;
 }
 // Beginn mehrzeilige HTML-Ausgabe

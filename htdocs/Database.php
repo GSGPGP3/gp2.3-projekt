@@ -33,5 +33,26 @@ class Database
 
     }
 
+    public function query($query)
+    {
+        return $this->mysqli->query($query);
+    }
+
+
+
+
+    public function loescheUmfrage()
+    {
+        // Der SQL-Befehl TRUNCATE leert eine Tabelle, d.h. alle Datens�tze werden gel�scht
+        // Kommentare l�schen
+        $sql = " TRUNCATE TABLE `Kommentare`";
+        @$this->mysqli->query($sql);
+        // Anzahl der Tendenzen auf 0 zurücksetzen
+        $sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
+        @$this->mysqli->query($sql);
+        // Sessions und Ticket-IDs löschen
+        $sql = " TRUNCATE TABLE `Sessions`";
+        @$this->mysqli->query($sql);
+    }
 
 }

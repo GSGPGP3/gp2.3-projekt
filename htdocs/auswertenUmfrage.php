@@ -16,7 +16,8 @@
 ##                                  ##
 ######################################
 session_start();
-include("connect.php");
+include("Database.php");
+$db = new Database();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1) {
     header("Location: loginAdmin.php");
 }
@@ -28,7 +29,7 @@ echo '
 for ($id = 1; $id <= count($ueberschriften); $id++) {
     // alle beantworteten Fragen aus der DB lesen
     $sql = "SELECT * FROM `Fragen` WHERE `Ausgewaehlt` = '1' AND Block = '$id' ORDER BY  ID";
-    $result = $mysqli->query($sql);
+    $result = $db->query($sql);
     if ($result && $result->num_rows >= 1) // falls es Fragen gibt
     {
         // Beginn mehrzeilige HTML-Ausgabe
@@ -114,7 +115,7 @@ echo '
 		      <td colspan="5">&nbsp;</td>
 	      </tr>';  // echo-Ende
 $sql = "SELECT * FROM Kommentare";
-$result = $mysqli->query($sql);
+$result = $db->query($sql);
 // wiederhole für alle Kommentare
 if ($result) {
     for ($i = 1; $i <= $result->num_rows; $i++) {

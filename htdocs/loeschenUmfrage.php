@@ -13,17 +13,10 @@
 ## Umfragedaten aus DB l�schen      ##
 ##                                  ##
 ######################################
-include("connect.php");
-// Der SQL-Befehl TRUNCATE leert eine Tabelle, d.h. alle Datens�tze werden gel�scht
-// Kommentare l�schen
-$sql = " TRUNCATE TABLE `Kommentare`";
-@$mysqli->query($sql);
-// Anzahl der Tendenzen auf 0 zur�cksetzen
-$sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
-@$mysqli->query($sql);
-// Sessions und Ticket-IDs l�schen
-$sql = " TRUNCATE TABLE `Sessions`";
-@$mysqli->query($sql);
+include("Database.php");
+$db = new Database();
+$db->loescheUmfrage();
+
 // Wechsel zu Admin-Men�
 header("Location: menuAdmin.php");
 ?>

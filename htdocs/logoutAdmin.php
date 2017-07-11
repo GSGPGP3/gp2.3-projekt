@@ -14,8 +14,6 @@
 ##                                  ##
 ######################################
 session_start();
-// Aufheben der Registrierung aller Variablen, welche in der aktuellen Session angelegt wurden
 session_unset();
-// Wechsel zu Startseite der Umfrage (Ticketabfrage oder Login)
 header("Location: index.php");
 ?>

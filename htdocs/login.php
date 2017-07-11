@@ -16,7 +16,8 @@
 ##                                  ##
 ######################################
 session_start();
-include("connect.php");
+include("Database.php");
+$db = new Database();
 $ausgefuellt = false;  // false
 if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
 {
@@ -26,7 +27,7 @@ if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob
     $ticketID = $_POST["ticketID"];  // Umfrage-Ticket-ID vom Formular
     $sql = "SELECT * FROM Sessions WHERE TicketID = '" . $ticketID . "';";
     //echo "#" . $sql . "<br>";  // Kontrollausgabe
-    $result = $mysqli->query($sql);
+    $result = $db->query($sql);
     if ($result != NULL) // Ticket-ID gibt es nicht
     {
         echo 'Anzahl Tickets mit dieser ID: ' . $result->num_rows . '<br>';
@@ -39,7 +40,7 @@ if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob
             $session_id = session_id(); // ?
             $sql = "UPDATE Sessions SET Session = '" . $session_id . "' WHERE ticketID = '" . $ticketID . "';";
             //echo "#" . $sql . "<br>";  // Kontrollausgabe
-            $mysqli->query($sql);
+            $db->query($sql);
             // hier wird im Browser zu einer anderen Seite gewechselt - vergleichbar Link aber ohne erforderlichen Klick
             header("Location: index.php");
         }
