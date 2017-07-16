@@ -26,23 +26,19 @@ $db = new Database();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1) {
     header("Location: loginAdmin.php");
 }
-$sql = " TRUNCATE TABLE `Kommentare`";
-@$db->query($sql);
-$sql = "UPDATE Fragen SET DP = '0', P = '0',Neut = '0',M = '0',DM = '0',Ausgewaehlt = '0';";
-@$db->query($sql);
-$sql = " TRUNCATE TABLE `Sessions`";
-@$db->query($sql);
+
+@$db->neueUmfrage();
 
 // alle Fragen der Umfrage in DB als ausgewählt kennzeichnen
-$sql = "SELECT * FROM Fragen";
-$result = $db->query($sql);
+
+$result = $db->getFragen();
 if ($result) {
     for ($n = 1; $n <= $result->num_rows; $n++) {
         $row = $result->fetch_assoc();
         $id = $row["ID"];
         if ($_POST[$id] == 1) {
-            $sql2 = "UPDATE Fragen SET Ausgewaehlt = '1' WHERE ID = '" . $id . "';";
-            $db->query($sql2);
+
+            $db->updateFrageAuswaehlen($id);
         }
     }
 }

@@ -18,8 +18,8 @@ session_start();
 include("Database.php");
 $db = new Database();
 $session_id = session_id();
-$sql = "SELECT * FROM Sessions WHERE Session = '$session_id';";
-$result = $db->query($sql);
+
+$result = $db->getSession($session_id);
 $login_var = false;
 if ($result) {
     for ($i = 0; $i < $result->num_rows; $i++) {
@@ -34,30 +34,24 @@ if ($login_var == false) {
 }
 
 
-if (isset($ausgefuellt) && !$ausgefuellt) { // falls Fragebogen für diese Session noch nicht ausgefüllt
-    $sql = "SELECT * FROM Fragen WHERE Ausgewaehlt = '1';";
-    //echo "#" . $sql . "<br>";  // Kontrollausgabe
-    $result = $db->query($sql);
-    // Schleife über alle Fragen; zählt in der DB die entsprechenden Werte je um 1 hoch
+if (isset($ausgefuellt) && !$ausgefuellt) {
+
+
+    $result = $db->getAusgewaehlteFragen();
     for ($i = 0; $i < $result->num_rows; $i++) {
         $row = $result->fetch_assoc();
         $id = $row["ID"];
         $a = $_POST[$id];
-        $sql2 = "UPDATE Fragen SET  $a = $a + 1 WHERE ID = $id;";
-        //echo "#" . $sql2 . "<br>";  // Kontrollausgabe
-        $db->query($sql2);
+
+
+        $db->updateFrageA($id,$a);
         $session_id = session_id();
     }
-    // Umfrage für diese Session als beendet bzw. ausgefüllt eintragen
-    $sql3 = "UPDATE Sessions SET Ausgefuellt = 1 WHERE Session = '$session_id';";
-    //echo "#" . $sql3 . "<br>";  // Kontrollausgabe
-    $db->query($sql3);
-    // Kommentar in DB eintragen
-    $kommentar = $_POST["Kommentar"];
-    $sql4 = "INSERT INTO Kommentare (`ID`, `Kommentar`) VALUES ('', '$kommentar');";
-    //echo "#" . $sql4 . "<br>";  // Kontrollausgabe
-    $db->query($sql4);
+
+    $db->updateSessionAusgefüllt($session_id);
+
+
+    $db->insertKommentar($_POST["Kommentar"]);
 }
-// erneuter Aufruf der index.php
 header("Location: index.php");
 ?>

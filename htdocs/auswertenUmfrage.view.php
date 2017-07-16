@@ -16,9 +16,7 @@ include "metadaten.php";
              $id <= count($ueberschriften);
              $id++) {
 
-
-            $sql = "SELECT * FROM `Fragen` WHERE `Ausgewaehlt` = '1' AND Block = '$id' ORDER BY  ID";
-            $result = $db->query($sql);
+            $result = $db->getAusgewaehlteFragen($id);
             if ($result && $result->num_rows >= 1) {
 
                 ?>
@@ -134,13 +132,12 @@ include "metadaten.php";
             <td colspan="5">&nbsp;</td>
         </tr>
         <?php
-        $sql = "SELECT * FROM Kommentare";
-        $result = $db->query($sql);
-        // wiederhole für alle Kommentare
+        $result = $db->getKommentare();
+
         if ($result) {
             for ($i = 1; $i <= $result->num_rows; $i++) {
                 $row = $result->fetch_assoc();
-                // Beginn mehrzeilige HTML-Ausgabe
+
                 ?>
                 <tr>
                     <td colspan="5"><?= $row["Kommentar"] ?> </td>

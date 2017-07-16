@@ -40,8 +40,8 @@ include("metadaten.php");
                             </tr>
                             <?php
                             for ($i = 1; $i <= count($ueberschriften); $i++) {
-                                $sql1 = "SELECT * FROM Fragen WHERE Ausgewaehlt = '1' AND Block = $i;";
-                                $result1 = $db->query($sql1);
+
+                                $result1 = $db->getAusgewaehlteFragen($id);
                                 if ($result1 && $result1->num_rows >= 1) // es gibt Fragen in diesem Block
                                 {
                                     ?>

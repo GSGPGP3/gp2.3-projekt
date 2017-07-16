@@ -20,8 +20,8 @@ include("metadaten.php");
                                     Ihrer Umfrage haben m&ouml;chten.</p>'
                                 <?php
                                 for ($i = 1; $i <= count($ueberschriften); $i++) {
-                                    $sql = "SELECT * FROM Fragen WHERE Block = '" . $i . "' ORDER BY ID;";
-                                    $result = $db->query($sql);
+
+                                    $result = $db->getFragenInBlock($i);
                                     ?><h4><?= $ueberschriften[$i] ?></h4><?php
 
                                     if ($result) {

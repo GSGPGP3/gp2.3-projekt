@@ -25,8 +25,8 @@ include("metadaten.php");
                                     $i <= $_POST["Anzahl"];
                                     $i++) {
                                     $ticket = randomString(7);
-                                    $sql = "INSERT INTO Sessions (`Session`, `TicketID`,`Ausgefuellt`) VALUES ('', '" . $ticket . "', '0');";
-                                    $db->query($sql);
+
+                                    $db->insertSession($ticket);
                                     ?>
                                     <td height="50px">
                                         <div align="center"><?= $ticket ?></div>

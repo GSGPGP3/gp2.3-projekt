@@ -28,7 +28,7 @@ include("metadaten.php");
                         <tr>
                             <td colspan="2" bgcolor="#FF0000">
                                 <?php
-                                if ($passwort_ok == false) {
+                                if (!$passwort_ok ) {
                                     echo 'Das angegebene Passowort ist falsch';
                                 }
                                 ?>

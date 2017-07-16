@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef0016c1-ece6-49a1-a073-3937c182184a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Database.php" afterPath="$PROJECT_DIR$/htdocs/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php" afterPath="$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/index.php" afterPath="$PROJECT_DIR$/htdocs/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/index.view.php" afterPath="$PROJECT_DIR$/htdocs/index.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/login.php" afterPath="$PROJECT_DIR$/htdocs/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/loginAdmin.view.php" afterPath="$PROJECT_DIR$/htdocs/loginAdmin.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/neu.view.php" afterPath="$PROJECT_DIR$/htdocs/neu.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/neu_2.php" afterPath="$PROJECT_DIR$/htdocs/neu_2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/neu_3.view.php" afterPath="$PROJECT_DIR$/htdocs/neu_3.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/speichernFeedback.php" afterPath="$PROJECT_DIR$/htdocs/speichernFeedback.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,38 +40,128 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="umfrage" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="sessions" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="umfrage" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/Database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+              <folding>
+                <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+                <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+                <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+                <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+                <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+                <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+                <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+                <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+                <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+                <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+                <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+                <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+                <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+                <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuAdmin.view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/menuAdmin.view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="909">
+              <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metadaten.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/metadaten.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/neu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neu.view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/neu.view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neu_2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/neu_2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="neu_2.view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/neu_2.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
+            <state relative-caret-position="558">
               <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1500234239372" expanded="true" signature="185:2460" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="198:2447" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="272:2433" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="328:2415" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="411:2391" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="440:2362" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="514:2332" ph="..." />
-                <marker date="1500234239372" expanded="false" signature="651:657" ph="ä" />
-                <marker date="1500234239372" expanded="false" signature="667:673" ph="ü" />
-                <marker date="1500234239372" expanded="false" signature="695:701" ph="ä" />
-                <marker date="1500234239372" expanded="false" signature="756:762" ph="ü" />
-                <marker date="1500234239372" expanded="true" signature="831:1810" ph="..." />
-                <marker date="1500234239372" expanded="true" signature="902:1658" ph="..." />
-                <marker date="1500234239372" expanded="false" signature="1697:1703" ph="ä" />
-                <marker date="1500234239372" expanded="false" signature="1730:1736" ph="ü" />
-                <marker date="1500234239372" expanded="false" signature="1863:1869" ph="ü" />
-                <marker date="1500234239372" expanded="false" signature="1901:1907" ph="ä" />
-                <marker date="1500234239372" expanded="false" signature="2099:2105" ph="ü" />
-                <marker date="1500234239372" expanded="false" signature="2115:2121" ph="ü" />
-                <marker date="1500234239372" expanded="false" signature="2129:2135" ph="ä" />
-                <marker date="1500234239372" expanded="false" signature="2300:2306" ph="©" />
               </folding>
             </state>
           </provider>
@@ -80,115 +180,21 @@
       <file leaf-file-name="neu_3.view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/neu_3.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+            <state relative-caret-position="99">
+              <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1500234410228" expanded="true" signature="185:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="198:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="272:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="351:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="376:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="446:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="538:575" ph="..." />
-                <marker date="1500234410228" expanded="true" signature="1002:1096" ph="INSERT INTO Sessions... " />
-                <marker date="1500234410228" expanded="false" signature="1955:1961" ph="ü" />
-                <marker date="1500234410228" expanded="false" signature="2005:2011" ph="ö" />
-                <marker date="1500234410228" expanded="false" signature="2055:2061" ph="ü" />
-                <marker date="1500234410228" expanded="false" signature="2207:2213" ph="©" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speichernFeedback.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="speichernFeedback.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/speichernFeedback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-              <folding>
-                <marker date="1500232394140" expanded="true" signature="691:743" ph="SELECT * FRO... Sessions" />
-                <marker date="1500232394140" expanded="true" signature="1267:1311" ph="SELECT * FRO... Fragen" />
-                <marker date="1500232394140" expanded="true" signature="1644:1686" ph="UPDATE Frage... " />
-                <marker date="1500232394140" expanded="true" signature="1903:1968" ph="UPDATE Sessi... " />
-                <marker date="1500232394140" expanded="true" signature="2132:2200" ph="INSERT INTO Kommentare... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auswertenUmfrage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auswertenUmfrage.view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="122" column="17" lean-forward="true" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
-              <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1500233229036" expanded="true" signature="278:357" ph="SELECT * FRO... Fragen" />
-                <marker date="1500233229036" expanded="true" signature="5181:5205" ph="SELECT * FRO... Kommentare" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-              <folding>
-                <marker date="1500233552280" expanded="true" signature="1103:1155" ph="SELECT * FRO... Sessions" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/index.view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="159" column="18" lean-forward="false" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
-              <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-                <element signature="e#2697#2703#1#HTML" expanded="true" />
-                <element signature="e#4167#4173#1#HTML" expanded="true" />
-                <marker date="1500234850948" expanded="true" signature="1694:1751" ph="SELECT * FRO... Fragen" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/login.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-              <folding>
-                <marker date="1500233632176" expanded="true" signature="1034:1093" ph="SELECT * FRO... Sessions" />
-                <marker date="1500233632176" expanded="true" signature="1709:1797" ph="UPDATE Sessi... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/login.view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-              <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-              </folding>
+              <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,11 +222,18 @@
       <find>mysq</find>
       <find>. '</find>
       <find>' .</find>
+      <find>$ausgefuellt</find>
+      <find>quer</find>
+      <find>session(</find>
+      <find>frage</find>
+      <find>getFragen</find>
+      <find>updateSess</find>
     </findStrings>
     <replaceStrings>
       <replace>?&gt;</replace>
       <replace>?&gt;</replace>
       <replace>&lt;?=</replace>
+      <replace>$data['ausgefüllt']</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -254,26 +267,26 @@
         <option value="$PROJECT_DIR$/loginAdmin.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fc8777fd-7a17-4a40-a2ee-4ed166595668/console.sql" />
         <option value="$PROJECT_DIR$/htdocs/loeschenUmfrage.php" />
-        <option value="$PROJECT_DIR$/htdocs/Database.php" />
         <option value="$PROJECT_DIR$/htdocs/logoutAdmin.php" />
-        <option value="$PROJECT_DIR$/htdocs/speichernFeedback.php" />
         <option value="$PROJECT_DIR$/htdocs/tail.php" />
-        <option value="$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php" />
-        <option value="$PROJECT_DIR$/htdocs/index.php" />
-        <option value="$PROJECT_DIR$/htdocs/login.php" />
-        <option value="$PROJECT_DIR$/htdocs/login.view.php" />
-        <option value="$PROJECT_DIR$/htdocs/loginAdmin.view.php" />
         <option value="$PROJECT_DIR$/htdocs/loginAdmin.php" />
         <option value="$PROJECT_DIR$/htdocs/menuAdmin.php" />
         <option value="$PROJECT_DIR$/htdocs/menuAdmin.view.php" />
         <option value="$PROJECT_DIR$/htdocs/neu.php" />
-        <option value="$PROJECT_DIR$/htdocs/neu.view.php" />
-        <option value="$PROJECT_DIR$/htdocs/neu_2.php" />
         <option value="$PROJECT_DIR$/htdocs/neu_2.view.php" />
         <option value="$PROJECT_DIR$/htdocs/neu_3.php" />
-        <option value="$PROJECT_DIR$/htdocs/neu_3.view.php" />
-        <option value="$PROJECT_DIR$/htdocs/index.view.php" />
         <option value="$PROJECT_DIR$/htdocs/auswertenUmfrage.php" />
+        <option value="$PROJECT_DIR$/htdocs/loginAdmin.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/login.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/index.php" />
+        <option value="$PROJECT_DIR$/htdocs/index.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/login.php" />
+        <option value="$PROJECT_DIR$/htdocs/neu.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/neu_2.php" />
+        <option value="$PROJECT_DIR$/htdocs/neu_3.view.php" />
+        <option value="$PROJECT_DIR$/htdocs/Database.php" />
+        <option value="$PROJECT_DIR$/htdocs/speichernFeedback.php" />
       </list>
     </option>
   </component>
@@ -499,7 +512,7 @@
       <workItem from="1499590878554" duration="3000" />
       <workItem from="1499669300766" duration="3976000" />
       <workItem from="1499755012380" duration="1133000" />
-      <workItem from="1500232415680" duration="2456000" />
+      <workItem from="1500232415680" duration="5344000" />
     </task>
     <task id="LOCAL-00001" summary="initial Commit">
       <created>1499548626540</created>
@@ -519,7 +532,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19244000" />
+    <option name="totallyTimeSpent" value="22132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,7 +551,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21344717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -593,7 +606,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+            <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+            <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,7 +646,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+            <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+            <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,7 +678,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+            <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+            <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,7 +718,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+            <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+            <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -735,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/tail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -753,39 +818,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/loeschenUmfrage.php">
+    <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="518">
+          <caret line="133" column="13" lean-forward="true" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/loginAdmin.view.php">
+    <entry file="file://$PROJECT_DIR$/htdocs/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="31" column="79" lean-forward="false" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+        <state relative-caret-position="102">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/index.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="84" column="103" lean-forward="false" selection-start-line="84" selection-start-column="103" selection-end-line="84" selection-end-column="103" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500233822900" expanded="true" signature="184:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="197:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="271:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="360:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="443:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="472:620" ph="..." />
-            <marker date="1500233822900" expanded="false" signature="565:569" ph="&gt;" />
-            <marker date="1500233822900" expanded="false" signature="569:575" ph=" " />
-            <marker date="1500233822900" expanded="false" signature="575:581" ph=" " />
-            <marker date="1500233822900" expanded="true" signature="649:791" ph="..." />
-            <marker date="1500233822900" expanded="false" signature="695:701" ph=" " />
-            <marker date="1500233822900" expanded="false" signature="751:757" ph=" " />
-            <marker date="1500233822900" expanded="true" signature="820:1004" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="1033:1096" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="1437:1665" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="1482:1635" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="1489:1630" ph="..." />
-            <marker date="1500233822900" expanded="true" signature="1694:1886" ph="..." />
-            <marker date="1500233822900" expanded="false" signature="1793:1799" ph="©" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/loeschenUmfrage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/login.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,6 +885,16 @@
         <state relative-caret-position="289">
           <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/loginAdmin.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -816,34 +916,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/menuAdmin.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
+        <state relative-caret-position="909">
           <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500233899692" expanded="true" signature="182:897" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="195:884" ph="..." />
-            <marker date="1500233899692" expanded="false" signature="599:605" ph="ö" />
-            <marker date="1500233899692" expanded="true" signature="965:3076" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="978:3063" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="1052:3049" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="1131:3031" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="1156:3006" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="1185:2980" ph="..." />
-            <marker date="1500233899692" expanded="true" signature="1250:2900" ph="..." />
-            <marker date="1500233899692" expanded="false" signature="1312:1318" ph="ü" />
-            <marker date="1500233899692" expanded="false" signature="1548:1554" ph="ä" />
-            <marker date="1500233899692" expanded="false" signature="1572:1578" ph="ä" />
-            <marker date="1500233899692" expanded="false" signature="1689:1695" ph="ö" />
-            <marker date="1500233899692" expanded="false" signature="1772:1778" ph="ü" />
-            <marker date="1500233899692" expanded="false" signature="1807:1813" ph="ö" />
-            <marker date="1500233899692" expanded="false" signature="1893:1899" ph="Ü" />
-            <marker date="1500233899692" expanded="false" signature="1939:1945" ph="ö" />
-            <marker date="1500233899692" expanded="false" signature="2045:2051" ph="ü" />
-            <marker date="1500233899692" expanded="false" signature="2343:2349" ph="ö" />
-            <marker date="1500233899692" expanded="false" signature="2475:2481" ph="ü" />
-            <marker date="1500233899692" expanded="false" signature="2583:2589" ph="ö" />
-            <marker date="1500233899692" expanded="false" signature="2616:2623" ph="ß" />
-            <marker date="1500233899692" expanded="false" signature="2948:2954" ph="©" />
           </folding>
         </state>
       </provider>
@@ -866,67 +942,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/neu.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="391">
+          <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500234170236" expanded="true" signature="183:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="196:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="270:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="326:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="409:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="438:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="512:767" ph="..." />
-            <marker date="1500234170236" expanded="true" signature="620:626" ph="ä" />
-            <marker date="1500234170236" expanded="true" signature="649:655" ph="ü" />
-            <marker date="1500234170236" expanded="true" signature="752:758" ph="ö" />
-            <marker date="1500234170236" expanded="true" signature="935:978" ph="SELECT * FRO... Fragen" />
-            <marker date="1500234170236" expanded="true" signature="935:994" ph="SELECT * FRO... Fragen" />
-            <marker date="1500234170236" expanded="true" signature="1511:1517" ph=" " />
-            <marker date="1500234170236" expanded="false" signature="1920:1926" ph="©" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/neu_2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <marker date="1500234210008" expanded="true" signature="1058:1139" ph="UPDATE Frage... " />
-            <marker date="1500234210008" expanded="true" signature="1288:1308" ph="SELECT * FRO... Fragen" />
-            <marker date="1500234210008" expanded="true" signature="1522:1582" ph="UPDATE Frage... " />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/neu_2.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
+        <state relative-caret-position="558">
           <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500234239372" expanded="true" signature="185:2460" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="198:2447" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="272:2433" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="328:2415" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="411:2391" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="440:2362" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="514:2332" ph="..." />
-            <marker date="1500234239372" expanded="false" signature="651:657" ph="ä" />
-            <marker date="1500234239372" expanded="false" signature="667:673" ph="ü" />
-            <marker date="1500234239372" expanded="false" signature="695:701" ph="ä" />
-            <marker date="1500234239372" expanded="false" signature="756:762" ph="ü" />
-            <marker date="1500234239372" expanded="true" signature="831:1810" ph="..." />
-            <marker date="1500234239372" expanded="true" signature="902:1658" ph="..." />
-            <marker date="1500234239372" expanded="false" signature="1697:1703" ph="ä" />
-            <marker date="1500234239372" expanded="false" signature="1730:1736" ph="ü" />
-            <marker date="1500234239372" expanded="false" signature="1863:1869" ph="ü" />
-            <marker date="1500234239372" expanded="false" signature="1901:1907" ph="ä" />
-            <marker date="1500234239372" expanded="false" signature="2099:2105" ph="ü" />
-            <marker date="1500234239372" expanded="false" signature="2115:2121" ph="ü" />
-            <marker date="1500234239372" expanded="false" signature="2129:2135" ph="ä" />
-            <marker date="1500234239372" expanded="false" signature="2300:2306" ph="©" />
           </folding>
         </state>
       </provider>
@@ -939,102 +976,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+          <folding>
+            <marker date="1500237730108" expanded="true" signature="1179:1260" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="1592:1660" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="1763:1787" ph="SELECT * FRO... Kommentare" />
+            <marker date="1500237730108" expanded="true" signature="1898:1950" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2099:2158" ph="SELECT * FRO... Sessions" />
+            <marker date="1500237730108" expanded="true" signature="2320:2408" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="2510:2569" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="2684:2744" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="2915:2996" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3164:3184" ph="SELECT * FRO... Fragen" />
+            <marker date="1500237730108" expanded="true" signature="3294:3388" ph="INSERT INTO Sessions... " />
+            <marker date="1500237730108" expanded="true" signature="3491:3533" ph="UPDATE Frage... " />
+            <marker date="1500237730108" expanded="true" signature="3682:3747" ph="UPDATE Sessi... " />
+            <marker date="1500237730108" expanded="true" signature="3830:3898" ph="INSERT INTO Kommentare... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/neu_3.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="99">
+          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500234410228" expanded="true" signature="185:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="198:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="272:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="351:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="376:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="446:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="538:575" ph="..." />
-            <marker date="1500234410228" expanded="true" signature="1002:1096" ph="INSERT INTO Sessions... " />
-            <marker date="1500234410228" expanded="false" signature="1955:1961" ph="ü" />
-            <marker date="1500234410228" expanded="false" signature="2005:2011" ph="ö" />
-            <marker date="1500234410228" expanded="false" signature="2055:2061" ph="ü" />
-            <marker date="1500234410228" expanded="false" signature="2207:2213" ph="©" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/speichernFeedback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-          <folding>
-            <marker date="1500232394140" expanded="true" signature="691:743" ph="SELECT * FRO... Sessions" />
-            <marker date="1500232394140" expanded="true" signature="1267:1311" ph="SELECT * FRO... Fragen" />
-            <marker date="1500232394140" expanded="true" signature="1644:1686" ph="UPDATE Frage... " />
-            <marker date="1500232394140" expanded="true" signature="1903:1968" ph="UPDATE Sessi... " />
-            <marker date="1500232394140" expanded="true" signature="2132:2200" ph="INSERT INTO Kommentare... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="122" column="17" lean-forward="true" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1500233229036" expanded="true" signature="278:357" ph="SELECT * FRO... Fragen" />
-            <marker date="1500233229036" expanded="true" signature="5181:5205" ph="SELECT * FRO... Kommentare" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <marker date="1500233552280" expanded="true" signature="1103:1155" ph="SELECT * FRO... Sessions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/login.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-          <folding>
-            <marker date="1500233632176" expanded="true" signature="1034:1093" ph="SELECT * FRO... Sessions" />
-            <marker date="1500233632176" expanded="true" signature="1709:1797" ph="UPDATE Sessi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/login.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/index.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="159" column="18" lean-forward="false" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#2697#2703#1#HTML" expanded="true" />
-            <element signature="e#4167#4173#1#HTML" expanded="true" />
-            <marker date="1500234850948" expanded="true" signature="1694:1751" ph="SELECT * FRO... Fragen" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/auswertenUmfrage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           <folding />
         </state>
       </provider>
