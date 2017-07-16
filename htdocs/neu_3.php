@@ -43,48 +43,4 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != 1)  // dürfte eigentlich
 {
     header("Location: login.php");
 }
-include("metadaten.php");
-// Ausgabe der Tabelle mit den Ticket-IDs und Eintrag in die DB
-
-// Beginn mehrzeilige HTML-Ausgabe
-echo '
-	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	    <tr>
-	      <td width="100%" height="400" align="center" valign="middle">
-	        <table width="70%" border="0" cellspacing="0" cellpadding="0">
-	          <tr>
-	            <td height="300px" align="left" valign="top">
-	              <table width="100%" border="1" cellspacing="0" cellpadding="0">
-	              	<tr>';  // echo-Ende
-srand(make_seed());
-if (isset($_POST["Anzahl"])) {
-    for ($i = 1; $i <= $_POST["Anzahl"]; $i++) {
-        $ticket = randomString(7); // erzeugt 7-stellige Zufallsstring --> Ticket-ID
-        // neue Ticket-ID --> neuer Datensatz in DB
-        $sql = "INSERT INTO Sessions (`Session`, `TicketID`,`Ausgefuellt`) VALUES ('', '" . $ticket . "', '0');";
-        $db->query($sql);
-        echo '
-    								<td height="50px"><div align="center">' . $ticket . '</div></td>';
-        // Zeilenumbruch alle 4 Ticket-IDs
-        if ($i % 4 == 0) {
-            // Beginn mehrzeilige HTML-Ausgabe
-            echo '
-      						</tr>
-                  <tr>'; // echo-Ende
-        }
-    }
-}
-// Beginn mehrzeilige HTML-Ausgabe
-echo '
-		  						</tr>
-	              </table>
-	              <p>Drucken Sie diese Seite aus und verteilen Sie die Ticket-IDs an ihre Sch&uuml;ler. Diese k&ouml;nnen sich nun einloggen und die Umfrage ausf&uuml;llen.</p>
-	              <p><a href="menuAdmin.php">Hier geht es zum Hauptmenu</a></p>
-	              <p align="center">&copy; Alexander Widmann</p></td>
-	          </tr>
-	        </table>
-	      </td>
-	    </tr>
-	  </table>
-	  </body></html>'; // echo-Ende
-?>
+include "neu_3.view.php";

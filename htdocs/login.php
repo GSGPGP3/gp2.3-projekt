@@ -18,7 +18,8 @@
 session_start();
 include("Database.php");
 $db = new Database();
-$ausgefuellt = false;  // false
+$ausgefuellt = false;
+
 if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob das Login-Formular bereits aufgerufen wurde
 {
     //Formular wurde bereits gesendet
@@ -46,40 +47,6 @@ if (isset($_GET['do'])) // prüft, ob die Array-Variable $_GET existiert, also ob
         }
     }
 }
-/*   Kontrollausgabe
-else
-{
-  echo "Erstanzeige Login-Formular<br>";
-}
-*/
-include("metadaten.php");   // Kopf, style, usw.
-//Login-Formular: beim Senden mit Method "post" (php-Variable $_POST) wird do=1 (php-Variable $_GET) angehängt -> s.o.
-//                Das Formular ruft sich selbst auf
-// Beginn mehrzeilige HTML-Ausgabe
-echo '
-		<div align="center">
-	    <br><br>
-	    <h1>Online-Umfrage: Sch&uuml;ler - Lehrer - Feedback</h1><br>
-	    <br><br>
-	    <form id="StudentLoginFormular" method="post" action="login.php?do=1">
-	      Umfrage-Ticket-ID <input type="text" name="ticketID" id="ticket" size="30"  /><br>'; // echo-Ende
-if ($ausgefuellt) // == true
-{
-    echo "Die angegebene Session-ID wurde bereits verwendet";
-}
-/*
-else
-{
-  echo "";
-}
-*/
-// Beginn mehrzeilige HTML-Ausgabe
-?>
-<br>
-<input type="submit" id="butSenden" value="Ticket-ID senden"/>
-<br><br>
-<a href="loginAdmin.php">Zum Lehrer-Login</a>
-</form>
-</div>
-</body>
-</html>
+
+
+include "login.view.php";
